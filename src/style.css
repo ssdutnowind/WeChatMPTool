@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: " ";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    padding: 10px;
+}
+
+h1.title {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.tooltip {
+    color: #aaa;
+    text-align: center;
+}
+
+.tab-header ul {
+    margin: 5px 0;
+    padding: 0 5px;
+}
+
+.tab-header li {
+    list-style: none;
+    float: left;
+    padding: 0 5px;
+    margin: 0 5px;
+    font-size: 16px;
+    color: #666;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.tab-header li:hover {
+    border-bottom-color: #35B6F0;
+}
+
+.tab-header li.active {
+    border-bottom-color: #0072B7;
+    color: #0072B7;
+}
+
+.tab-container {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.tab-container::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+.tab-container::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+}
+
+.tab-container::-webkit-scrollbar-track-piece:no-button {
+}
+
+.tab-container::-webkit-scrollbar-thumb {
+    background-color: #ADE6FF;
+    border-radius: 3px;
+}
+
+.tab-container::-webkit-scrollbar-thumb:hover {
+    background-color: #35B6F0;
+}
+
+.tab-container::-webkit-scrollbar-thumb:active {
+    background-color: #666;
+}
+
+.item-list {
+    padding: 0;
+    margin: 0;
+}
+
+.item-list li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.item-preview {
+    width: 405px;
+    min-height: 20px;
+    padding: 5px;
+    border: 1px dashed #aaa;
+    background-color: #fff;
+    float: left;
+    overflow: hidden;
+}
+
+.item-action {
+    width: 65px;
+    min-height: 20px;
+    padding-left: 10px;
+    float: left;
+}
+
+.item-action button {
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1em;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: #35B6F0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.editor-container {
+    height: 300px;
+}
+
+.footer {
+    height: 30px;
+    border-top: 1px solid #aaa;
+}
+
+.footer .tooltip {
+    text-align: center;
+    margin: 0;
+    line-height: 30px;
+}
+
+.footer .tooltip.red {
+    color: #f44336;
+}
+
+.footer .tooltip.blue {
+    color: #2196f3;
+}
